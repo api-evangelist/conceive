@@ -1,8 +1,24 @@
 aid: conceive
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/conceive.png
 name: Conceive
-description: 'Conceive is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: health-wellness. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Conceive is a telehealth platform for fertility and pregnancy support.
+  It offers 24/7 text access to fertility and pregnancy nurses, coaches, and dietitians,
+  personalized fertility coaching, fertility test interpretation, virtual video visits
+  with providers, expert-led community events, and an educational library. Membership
+  is delivered through Conceive Plus and Conceive Premium tiers. The company is a portfolio
+  company of Kindred Ventures. As a consumer telehealth app it publishes no public
+  developer API surface; this profile captures its published identity and domain security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/conceive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Health Wellness
+- Telehealth
+- Fertility
+- Pregnancy
+- Coaching
+- Consumer Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/conceive-domain-security.yml
 - type: Website
   url: https://weconceive.com/
+- type: SignUp
+  url: https://weconceive.com/login
+- type: Login
+  url: https://weconceive.com/login
+- type: Support
+  url: https://weconceive.com/faqs
+- type: PrivacyPolicy
+  url: https://docs.google.com/document/d/14Q5QvPzbHkEHl9Sw5lMclqXJhzWyebXY/
+- type: TermsOfService
+  url: https://docs.google.com/document/d/1w-v7ori4bE1fkXVDl1I-Vi2UMMmRGDrD/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
